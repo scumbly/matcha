@@ -10,6 +10,8 @@ fully-supported re-implementation of the classic *Caffeine* menulet.
 
 ## Features
 
+<img width="283" height="356" alt="matcha-screenshot" src="https://github.com/user-attachments/assets/01dbf065-a150-4aa3-a8b7-fb0a5b1e2a2b" align="right" />
+
 - **Left-click** the cup to toggle keep-awake on/off. The icon fills when active.
 - **Right-click** (or ⌃-click) for a menu: choose a duration, toggle Start at
   Login / the global hotkey / low-battery cutoff, or open About.
