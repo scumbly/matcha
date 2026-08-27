@@ -34,13 +34,6 @@ macOS 13 (Ventura) or later, Apple silicon or Intel.
 The app is not Apple notarized, so you'll need to approve it so Gatekeeper 
 does not block it. Any **one** of these 3 approaches will accomplish this:
 
-**Why there's a prompt at all:** these builds are **ad-hoc signed, not
-notarized** — I don't pay for an Apple Developer account. When you download a
-file, your browser attaches an extended attribute called `com.apple.quarantine`
-to it. Gatekeeper sees that flag on an app it can't verify with Apple and
-refuses the first launch, calling it "from an unidentified developer." Each
-option below is a different way of dealing with that flag.
-
 ### Option A — download and approve it in System Settings
 
 No terminal required.
