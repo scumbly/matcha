@@ -29,8 +29,8 @@ macOS 13 (Ventura) or later, Apple silicon or Intel.
 
 ## Install
 
-Three routes to the same app. Pick by how much you care about the Gatekeeper
-prompt and whether you'd rather spend thirty seconds in a terminal.
+The app is not Apple notarized, so you'll need to approve it so Gatekeeper 
+does not block it. Any **one** of these 3 approaches will accomplish this:
 
 **Why there's a prompt at all:** these builds are **ad-hoc signed, not
 notarized** — I don't pay for an Apple Developer account. When you download a
@@ -41,7 +41,7 @@ option below is a different way of dealing with that flag.
 
 ### Option A — download and approve it in System Settings
 
-No terminal required. This is the route Apple intends.
+No terminal required.
 
 1. Grab the latest zip from [Releases](https://github.com/scumbly/matcha/releases),
    unzip it, and drag `Matcha.app` to your Applications folder.
@@ -66,12 +66,7 @@ xattr -dr com.apple.quarantine /Applications/Matcha.app
 ```
 
 `-d` deletes the named attribute, `-r` recurses through everything inside the
-bundle. With the flag gone, Gatekeeper has nothing to object to and the app
-opens normally — no System Settings trip, no dialog.
-
-This is the same outcome as Option A by a different mechanism: A tells macOS
-"I vouch for this app," B removes the evidence that it was downloaded. Use
-whichever you prefer, not both.
+bundle.
 
 ### Option C — build it yourself
 
